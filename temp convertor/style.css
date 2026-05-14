@@ -1,0 +1,133 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#e8f3ec;
+    padding:20px;
+}
+
+/* ---------- Main Card ---------- */
+
+.card{
+    width:420px;
+    background:#f6fbf7;
+    padding:35px;
+    border-radius:24px;
+    border:1px solid #cfe3d4;
+    box-shadow:0 10px 30px rgba(70,120,90,0.12);
+}
+
+.card h1{
+    font-size:32px;
+    color:#2f5d50;
+    margin-bottom:10px;
+    font-weight:600;
+    text-align:center;
+}
+
+.subtitle{
+    color:#5d7a70;
+    font-size:15px;
+    line-height:1.6;
+    margin-bottom:28px;
+    text-align:center;
+}
+
+/* ---------- Inputs ---------- */
+
+.input-section{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.input-box label{
+    display:block;
+    margin-bottom:8px;
+    color:#3d5f55;
+    font-size:15px;
+    font-weight:500;
+}
+
+.input-box input,
+.input-box select{
+    width:100%;
+    padding:14px;
+    border:1px solid #bdd7c5;
+    border-radius:12px;
+    font-size:16px;
+    outline:none;
+    background:#ffffff;
+    color:#2f5d50;
+    transition:0.3s;
+}
+
+.input-box input:focus,
+.input-box select:focus{
+    border-color:#6ea58b;
+    background:#f9fffb;
+}
+
+/* ---------- Button ---------- */
+
+button{
+    width:100%;
+    margin-top:26px;
+    padding:15px;
+    border:none;
+    border-radius:14px;
+    background:#5f8f74;
+    color:white;
+    font-size:17px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#4d7b63;
+}
+
+/* ---------- Result ---------- */
+
+.result{
+    margin-top:28px;
+    background:#5f8f74;
+    border-radius:18px;
+    padding:24px;
+    text-align:center;
+}
+
+.result h2{
+    color:#eef8f1;
+    font-size:20px;
+    margin-bottom:12px;
+}
+
+.result p{
+    color:#ffffff;
+    font-size:20px;
+    line-height:1.8;
+}
+
+/* ---------- Responsive ---------- */
+
+@media(max-width:500px){
+
+    .card{
+        width:100%;
+        padding:25px;
+    }
+
+    .card h1{
+        font-size:26px;
+    }
+}
